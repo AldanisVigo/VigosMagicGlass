@@ -26,10 +26,6 @@ window.addEventListener('mousemove',(e)=>{
             return Math.sqrt(x * x + y * y);
         }    
         
-        // let distXFromButton = Math.abs(button.offsetLeft - e.clientX)
-        // let distYFromButton = Math.abs(button.offsetTop - e.clientY)
-
-        // console.log(`Button Pos: (${button.offsetLeft},${button.offsetTop})`)
         let distanceMouseFromButton = getDistance(button.offsetLeft,button.offsetTop,e.clientX,e.clientY - magHeight / 3.5)
         console.log(`Distance from button (${distanceMouseFromButton})`) 
 
